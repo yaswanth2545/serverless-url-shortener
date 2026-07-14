@@ -26,7 +26,7 @@ Resources:
   CreateShortUrlFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: src/
+      CodeUri: ./
       Handler: handler.create_short_url
       Environment:
         Variables:
@@ -44,7 +44,7 @@ Resources:
   RedirectShortUrlFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: src/
+      CodeUri: ./
       Handler: handler.redirect_short_url
       Environment:
         Variables:
